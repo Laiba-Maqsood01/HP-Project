@@ -18,7 +18,8 @@ const enrollmentSchema = new mongoose.Schema(
       min: 0,
       max: 100,
     },
-    completed: { //this will be used for showing that the lesson is completed or not?
+    completed: { 
+      //this will be used for showing that the lesson is completed or not?
       type: Boolean,
       default: false,
     },
