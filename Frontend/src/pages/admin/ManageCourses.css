@@ -1,0 +1,11 @@
+.mobile-card {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.mobile-card-row .value {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}

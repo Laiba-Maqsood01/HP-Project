@@ -1,0 +1,34 @@
+.analytics-container {
+  padding: 10px;
+}
+
+/* STAT CARDS */
+.stat-card {
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #f8fafc, #ffffff);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+.stat-card h6 {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.stat-card h2 {
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+/* CHART CARDS */
+.premium-card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  background: white;
+}
+
+.chart-title {
+  font-weight: 600;
+  margin-bottom: 15px;
+}

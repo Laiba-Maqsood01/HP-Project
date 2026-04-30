@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+  .mb-3, .mb-4 {
+    margin-bottom: 12px !important;
+  }
+
+  button {
+    flex: 1;
+  }
+}

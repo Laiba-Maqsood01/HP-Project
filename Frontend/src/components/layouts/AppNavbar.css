@@ -1,0 +1,73 @@
+.app-navbar {
+  min-height: var(--app-navbar-height);
+  background: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid rgba(16, 24, 40, 0.08);
+  backdrop-filter: blur(10px);
+  z-index: 1200;
+}
+
+.app-navbar-logo {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(135deg, #1f2937, #0f172a);
+}
+
+.app-navbar-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #0f172a;
+}
+
+.app-nav-link.nav-link,
+.app-nav-dropdown > .nav-link {
+  font-weight: 500 !important;
+  color: #334155 !important;
+}
+.app-nav-link:hover,
+.app-nav-dropdown > a.nav-link:hover {
+  color: #111827;
+}
+
+.app-dropdown-item {
+  min-width: 18rem;
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+}
+
+.app-dropdown-description {
+  margin-top: 0.1rem;
+  font-size: 0.78rem;
+  color: #64748b;
+  white-space: normal;
+}
+
+.app-mobile-link {
+  display: block;
+  color: #0f172a;
+  text-decoration: none;
+}
+
+.app-mobile-link:hover {
+  color: #000000;
+}
+/* Profile Dropdown Styling */
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu {
+  border-radius: 12px;
+}
+/* Fix profile dropdown alignment on small screens */
+@media (max-width: 991px) {
+  .navbar .dropdown-menu {
+    right: 0;
+    left: auto;
+    margin-top: 0.5rem;
+  }
+}

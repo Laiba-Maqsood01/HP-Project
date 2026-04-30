@@ -1,0 +1,19 @@
+/* sidebar hover */
+.list-group-item:hover {
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+/* cards look cleaner */
+.card {
+  border-radius: 12px;
+}
+
+.recharts-responsive-container {
+  width: 100% !important;
+  max-width: 100%;
+}
+
+.recharts-wrapper {
+  max-width: 100% !important;
+}

@@ -1,0 +1,33 @@
+:root {
+  --app-navbar-height: 70px;
+}
+
+.global-bg {
+  min-height: 100vh;
+  width: 100%;
+  
+  background: white;
+  background-image: radial-gradient(
+    100% 50% at 50% 0%,
+    rgba(0, 163, 255, 0.13) 0%,
+    rgba(0, 163, 255, 0) 50%,
+    rgba(0, 163, 255, 0) 100%
+  );
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.student-content,
+.admin-main,
+.content {
+  margin-top: var(--app-navbar-height); 
+
+  height: calc(100vh - var(--app-navbar-height));
+  overflow-y: auto;
+}
+
+body {
+  padding-top: 70px; /* same as navbar height */
+}
