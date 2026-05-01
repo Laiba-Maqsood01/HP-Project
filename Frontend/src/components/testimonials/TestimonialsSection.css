@@ -127,7 +127,7 @@
 
   .testimonial-column {
     width: 48%;
-    max-width: 340px;
+    /* max-width: 340px; */
   }
 }
 
