@@ -109,9 +109,15 @@
   color: #6b7280;
 }
 
+@media (max-width: 400px) {
+  .testimonial-column {
+    width: 100%;
+    max-width: 340px;
+  }
+}
 
-/*  MOBILE (1 column) */
-@media (max-width: 576px) {
+/*  MOBILE (2 column) */
+@media (min-width: 401px) and (max-width: 576px) {
   .testimonial-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
