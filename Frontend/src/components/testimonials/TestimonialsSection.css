@@ -19,19 +19,13 @@
   overflow: hidden;
   max-height: 650px;
   mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .testimonial-column {
-  width: 340px;
+  width: 100%;
+  max-width: 380px;
   overflow: hidden;
-}
-
-@media (min-width: 992px) {
-  .testimonial-column {
-    width: 380px;
-    /* desktop */
-  }
 }
 
 .testimonial-track {
@@ -112,7 +106,7 @@
 @media (max-width: 400px) {
   .testimonial-column {
     width: 100%;
-    max-width: 340px;
+    max-width: 320px;
   }
 }
 
@@ -127,7 +121,6 @@
 
   .testimonial-column {
     width: 48%;
-    /* max-width: 340px; */
   }
 }
 
