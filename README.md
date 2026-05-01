@@ -294,6 +294,7 @@ Backend/
 * ImageKit
 * Helmet
 * Express Rate Limit
+* Configured CORS to allow secure communication between frontend and backend.
 
 ---
 
