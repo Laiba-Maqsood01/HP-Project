@@ -18,7 +18,8 @@ app.use(apiLimiter);
 
 
 app.use(cors({
-  origin: "http://localhost:5173", // useful when frontend is integrated
+  // origin: "http://localhost:5173", // useful when frontend is integrated
+   origin: process.env.FRONTEND_URL,
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"]
