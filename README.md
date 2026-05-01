@@ -1,6 +1,5 @@
 ## 🌐 Live Demo
-
-[🚀 Experience the application live]([https://](https://hunarmandproject.netlify.app/))
+ [🚀 Experience the application live](https://hunarmandproject.netlify.app/)
 
 # 🚀 Full Fledged MERN Stack Learning Management System (LMS)
 
