@@ -247,7 +247,7 @@ export default function AppNavbar(
             </Accordion>
 
             <div className="mt-auto d-grid gap-2">
-             {!loading && isAuthenticated && (
+             {!loading && !isAuthenticated && (
                 <>
                   <Button as={Link} to={auth.login.url} variant="outline-dark"  onClick={handleNavClick}>
                     {auth.login.text}
