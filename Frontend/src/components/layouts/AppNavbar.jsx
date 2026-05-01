@@ -132,7 +132,6 @@ export default function AppNavbar(
           <span className="app-navbar-title">{brand.title}</span>
         </Navbar.Brand>
 
-        {/* <Navbar.Toggle aria-controls="app-navbar-offcanvas" /> */}
         <div className="d-flex align-items-center gap-2 ms-auto">
 
           {/* Account Button (VISIBLE ON MOBILE) */}
@@ -143,9 +142,14 @@ export default function AppNavbar(
           )}
 
           {/* Hamburger */}
+          {/* <Navbar.Toggle
+            aria-controls="app-navbar-offcanvas"
+            onClick={() => setShowOffcanvas(true)} /> */}
+
           <Navbar.Toggle
             aria-controls="app-navbar-offcanvas"
-            onClick={() => setShowOffcanvas(true)} />
+            onClick={() => setShowOffcanvas(prev => !prev)}
+          />
 
         </div>
 
@@ -196,7 +200,7 @@ export default function AppNavbar(
                 </Button>
               </>
             ) : (
-              <ProfileDropdown user={user} onLogout={handleLogout}  onLogoutAll={handleLogoutAll} />
+              <ProfileDropdown user={user} onLogout={handleLogout} onLogoutAll={handleLogoutAll} />
             )}
           </div>
 
@@ -242,7 +246,6 @@ export default function AppNavbar(
 
                 return (
                   <div key={item.title} className="py-2 border-bottom">
-                    {/* <Link to={item.url} className="app-mobile-link fw-semibold "> */}
                     <Link to={item.url} className="app-mobile-link fw-semibold" onClick={handleNavClick}>
                       {item.title}
                     </Link>
@@ -254,10 +257,10 @@ export default function AppNavbar(
             <div className="mt-auto d-grid gap-2">
               {!isAuthenticated && (
                 <>
-                  <Button as={Link} to={auth.login.url} variant="outline-dark">
+                  <Button as={Link} to={auth.login.url} variant="outline-dark"  onClick={handleNavClick}>
                     {auth.login.text}
                   </Button>
-                  <Button as={Link} to={auth.signup.url} variant="dark">
+                  <Button as={Link} to={auth.signup.url} variant="dark"  onClick={handleNavClick}>
                     {auth.signup.text}
                   </Button>
                 </>
