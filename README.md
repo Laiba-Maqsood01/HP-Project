@@ -279,11 +279,16 @@ Backend/
 
 ## 🛠️ Technologies Used
 
+* React JS
+* React Router
+* Axios
+* CSS/React Bootstrap
 * Node.js
 * Express.js
 * MongoDB + Mongoose
 * JWT Authentication
 * Bcrypt
+* Dotenv
 * Zod Validation
 * Nodemailer
 * ImageKit
@@ -297,7 +302,7 @@ Backend/
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone <your-repo-link>
+git clone https://github.com/Laiba-Maqsood01/HP-Project.git
 cd Backend
 ```
 
@@ -398,7 +403,14 @@ cd Frontend
 ```bash
 npm install
 ```
-### 3️⃣ Start development server:
+### 3️⃣ Setup Environment Variables
+
+Create `.env` file:
+
+```
+FRONTEND_URL=<Your FRONTEND_URL>
+```
+### 4️⃣ Start development server:
 
 ```bash
 npm run dev
