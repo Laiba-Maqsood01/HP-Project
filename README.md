@@ -517,3 +517,12 @@ This LMS is a production-style full-stack application implementing:
 ## 📌 Author
 
 Developed as part of MERN Stack Final Project
+
+---
+
+**Disclaimer**
+
+All images, videos, and other media used in this project are the property of their respective owners and are not owned by me. These resources have been included solely for educational and demonstration purposes as part of a course project.
+
+No copyright infringement is intended. If any content owner has concerns regarding the use of their material, please feel free to contact me, and I will promptly address the issue.
+
