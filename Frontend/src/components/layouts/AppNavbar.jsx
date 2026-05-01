@@ -115,11 +115,7 @@ export default function AppNavbar(
         };
       });
   }, [menu, user]);
-
-  if (loading) {
-    return <div>Loading...</div>;
-  }
-
+  
   const groupedMobileMenu = filteredMenu;
 
   return (
@@ -142,10 +138,6 @@ export default function AppNavbar(
           )}
 
           {/* Hamburger */}
-          {/* <Navbar.Toggle
-            aria-controls="app-navbar-offcanvas"
-            onClick={() => setShowOffcanvas(true)} /> */}
-
           <Navbar.Toggle
             aria-controls="app-navbar-offcanvas"
             onClick={() => setShowOffcanvas(prev => !prev)}
@@ -190,7 +182,7 @@ export default function AppNavbar(
           </Nav>
 
           <div className="d-flex align-items-center gap-2">
-            {!isAuthenticated ? (
+            {loading? null: !isAuthenticated ? (
               <>
                 <Button as={Link} to={auth.login.url} variant="outline-dark" size="sm">
                   {auth.login.text}
@@ -255,7 +247,7 @@ export default function AppNavbar(
             </Accordion>
 
             <div className="mt-auto d-grid gap-2">
-              {!isAuthenticated && (
+             {!loading && isAuthenticated && (
                 <>
                   <Button as={Link} to={auth.login.url} variant="outline-dark"  onClick={handleNavClick}>
                     {auth.login.text}
