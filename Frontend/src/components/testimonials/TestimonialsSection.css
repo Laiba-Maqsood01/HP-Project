@@ -114,7 +114,7 @@
   .testimonial-wrapper {
     flex-direction: column;
     align-items: center;
-    max-height: 500px;
+    /* max-height: 500px; */
   }
 
   .testimonial-column {
