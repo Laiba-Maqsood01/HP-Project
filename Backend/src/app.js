@@ -13,6 +13,8 @@ import cors from "cors";
 
 const app = express()
 
+app.set("trust proxy", 1);
+
 // Rate limiter FIRST (global protection)
 app.use(apiLimiter);
 
