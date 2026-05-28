@@ -27,9 +27,6 @@ if(!process.env.ADMIN_PASSWORD){
     throw new Error("ADMIN_PASSWORD is not defined in environment variables.");
 }
 
-if(!process.env.RESEND_API_KEY){
-    throw new Error("RESEND_API_KEY is not defined in environment variables.");
-}
 
 
 
@@ -40,7 +37,6 @@ const config = {
     GOOGLE_USER: process.env.GOOGLE_USER,
     EMAIL_ADMIN: process.env.EMAIL_ADMIN,
     ADMIN_PASSWORD: process.env.ADMIN_PASSWORD,
-    RESEND_API_KEY: process.env.RESEND_API_KEY
 }
 
 export default config
