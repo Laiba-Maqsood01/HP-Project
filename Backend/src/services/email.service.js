@@ -46,7 +46,7 @@ const resend = new Resend(config.RESEND_API_KEY);
 export const sendEmail = async (to, subject, text, html) => {
   try {
     const response = await resend.emails.send({
-      from: "LearnSphere onboarding@resend.dev", // Sandbox sender
+      from: "onboarding@resend.dev", // Sandbox sender
       to,
       subject,
       text,
