@@ -27,6 +27,11 @@ if(!process.env.ADMIN_PASSWORD){
     throw new Error("ADMIN_PASSWORD is not defined in environment variables.");
 }
 
+if(!process.env.RESEND_API_KEY){
+    throw new Error("RESEND_API_KEY is not defined in environment variables.");
+}
+
+
 
 const config = {
     MONGO_URI: process.env.MONGO_URI,
@@ -34,7 +39,8 @@ const config = {
     GOOGLE_APP_PASSWORD: process.env.GOOGLE_APP_PASSWORD,
     GOOGLE_USER: process.env.GOOGLE_USER,
     EMAIL_ADMIN: process.env.EMAIL_ADMIN,
-    ADMIN_PASSWORD: process.env.ADMIN_PASSWORD
+    ADMIN_PASSWORD: process.env.ADMIN_PASSWORD,
+    RESEND_API_KEY: process.env.RESEND_API_KEY
 }
 
 export default config
