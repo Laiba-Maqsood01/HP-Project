@@ -40,7 +40,7 @@ app.use(morgan("dev"));
 app.use(cookieParser());
 
 // for vercel server only
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
     res.status(200).json({
         success: true,
         message: "Backend API is running"
