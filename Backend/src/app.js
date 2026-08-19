@@ -39,6 +39,14 @@ app.use(morgan("dev"));
 // use cookieParser
 app.use(cookieParser());
 
+// for vercel server only
+app.get("/", (req, res) => {
+    res.status(200).json({
+        success: true,
+        message: "Backend API is running"
+    });
+});
+
 // All routes starting with /api/auth
 app.use("/api/auth", authRouter)
 
